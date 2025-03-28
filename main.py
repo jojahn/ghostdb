@@ -1,4 +1,4 @@
-import engine as ghostdb
+import ghostdb
 
 if __name__ == "__main__":
     con = ghostdb.connect("test.ods")

@@ -4,6 +4,7 @@ from odf.table import Table, TableCell, TableColumn, TableRow
 from odf.text import P
 from odf.style import ParagraphProperties, Style, TextProperties
 
+
 class GhostDocument:
     def __init__(self, source: str) -> None:
         self.sheets = {}
@@ -83,10 +84,3 @@ class GhostDocument:
 
     def close(self):
         pass
-        
-if __name__ == "__main__":
-    con = GhostDocument("test.ods")
-    con.create_table("peoples", ["id", "name", "age"])
-    con.create_row("peoples", [1, "John Doe", 30])
-    con.create_row("peoples", [2, "Jane Doe", 29])
-    con.close()

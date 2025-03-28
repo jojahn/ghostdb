@@ -50,6 +50,3 @@ class GhostEngine:
     def disconnect(self):
         self.document.close()
 
-def connect(source: str) -> GhostEngine:
-    return GhostEngine(source)    
-
